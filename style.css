@@ -1,0 +1,206 @@
+*{  
+    margin: 0;
+    padding: 0;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #242F40;
+}
+
+/*-----------Landing----------------------*/
+.landing{
+    display: flex;
+    overflow-y: hidden;
+
+}
+
+.landing__section1{
+    width: 50vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.landing__section2{
+    width: 50vw;
+    height: 100vh;      
+}
+
+.landing__section1__div1{
+    height: 50vh;
+    display: flex;
+}
+
+.landing__section1__div1--img{
+    margin-top: 10%;
+    margin-left: 50%;
+    transform: translatex(-50%);
+    height: 10rem;
+    width: 30rem;
+}
+
+.landing__section1__div2{
+    display: flex;
+    flex-direction: column;  
+    margin-top: 14%;
+    align-items: center;  
+    display: flex;    
+    height: 50vh;
+}
+
+.landing__section1__div2--text{
+    margin: .3rem;
+    font-family: Cambria;
+    font-size: 1.5rem; 
+    line-height: 56px;
+}
+
+.landing__section1__div2--img{
+    height: 2rem;
+    width: 2.5rem;
+}
+
+.landing__section2--img{
+    width: 100%;
+    height: 100%;
+}
+
+/*-----------Main-------------------*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    position: fixed;   
+    z-index: 999;
+    height: 6rem;
+    width: 100%;
+    background-color: #E5E5E5;
+}
+
+main{
+      
+}
+
+
+.header__div1{
+    width: 50vw;    
+}
+
+.header__div2{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 50vw;
+}
+
+.header__div1--titulo{
+    width: 14.7rem;
+    height: 4.6rem;
+    margin-top: 1%;
+    margin-left: 20%;
+}
+
+.header__div2__links{
+    font-family: Cambria, serif;    
+    font-size: 1.2rem;
+    margin: 2rem;
+}
+
+.header__div2__links--link{
+    margin-left: 4rem;
+}
+
+
+/*-----------Sobre mi-------------------*/
+
+.sobre_mi{
+    background-color: aqua;
+    height: 100vh;  
+}
+
+.sobre_mi--separador{
+    width: 100%;
+    margin-top: 6rem;
+    height: 10rem;
+}
+
+.sobre_mi__texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+    margin-left: 50%;
+    transform: translatex(-50%);
+    width: 78%;
+    height: fit-content;
+    background-color: bisque;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sobre_mi__texto h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sobre_mi__texto p{
+    font-size: .9rem;
+    margin-top: 1rem;
+}
+
+
+/*-----------Escritos-------------------*/
+
+.escritos{
+    background-color: rgb(11, 86, 86);
+    height: 100vh;  
+
+    top:0;
+    display: flex;
+    overflow-x: hidden;
+}
+
+
+
+article{
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.escritos__n1{
+   width: 100%;
+   display: flex;
+   height: 90vh;
+   align-items: center; 
+   background-color: beige;   
+}
+
+.escritos__n1--text{
+    width: 50vw;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    margin-top: -10rem;
+}
+
+.escritos__n1--text p{
+    font-family: Cambria;
+    font-size: 1.2rem;
+    width: 60%;
+}
+
+.escritos__n1--img{
+    width: 80%;
+    height: 80%;
+}
+
+
+.escritos__n2{
+    width: 100%;
+    display: flex;
+    height: 90vh;
+    align-items: center;    
+    background-color: rgb(87, 87, 65); 
+ }
+
+ 
