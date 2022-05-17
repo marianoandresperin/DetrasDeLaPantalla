@@ -17,11 +17,15 @@ section {
   
 }
 
-
 a:link, a:active, a:visited {
     text-decoration:none;
     color: #242F40;
 }
+
+a:hover {
+    text-decoration:none;
+    color: #6AA6C8;
+} 
 
 @keyframes header--animation {
     from {height: 6rem;}
@@ -158,10 +162,12 @@ header{
     font-size: 3.5rem;
     font-weight: 700;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #242F40;
 }
 
 .sobre_mi__texto p{
-    font-size: .9rem;
+    text-align: justify;
+    font-size: 1rem;
     margin-top: 1rem;
 }
 
@@ -171,7 +177,7 @@ header{
 
 
 article{
-    min-width: 100vw;
+    /* min-width: 100vw; */
     min-height: 100vh;
 }
 
@@ -194,6 +200,7 @@ article{
     font-family: Cambria;
     font-size: 1.2rem;
     width: 60%;
+    text-align: justify;
 }
 
 .escritos__n1--img{
@@ -214,43 +221,35 @@ article{
 /*-----------Redes-------------------*/
 
  .redes{
-    margin-top: 6rem;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    min-height: 80vh;
   }
-  .redes__container1{
+  .redes__container{
     display: flex;
-    height: 50%;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url('Assets/arboles.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* padding-bottom: 10rem; */
   }
-  .redes__container1 h2{
+  .redes__container h2{
     font-family: Cambria;
     margin-bottom: 2rem;
     font-size: 3rem;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  .redes__container1 p{
-    font-family: Cambria;
-    margin-top: 2rem;
-    font-size: 1.1rem;
-    width: 20rem;
-    height: 10rem;
-    
+    color: #242F40;
   }
 
- .redes__container2{
-    display: flex;
-    justify-content: flex-end;
-    height: 50%;
- 
-  }
-  .redes--img{
-      margin-top: .2rem;
-      margin-right: -.2rem;
-      width: 100%;
-      height: 100%;
+  .redes-container-iconos {
+      width: 35%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
   }
 
 
