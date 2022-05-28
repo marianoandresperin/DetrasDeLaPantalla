@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen> 
     <title>Detrás de la Pantalla</title>
 </head>
@@ -16,6 +17,7 @@
             <div class="header__div2__links">
                 <a id="link_mi" href="#" class="header__div2__links--link">Sobre mi</a>
                 <a id="link_escritos" href="#" class="header__div2__links--link">Escritos</a>
+                <a id="link_contacto" href="#" class="header__div2__links--link">Contacto</a>
                 <a id="link_redes" href="#" class="header__div2__links--link">Redes</a>
             </div>
         </div>
@@ -47,7 +49,7 @@
             </div>
         </article>
    
-      <articicle id="escritos">  
+      <article id="escritos">  
             <div class="sticky-container">
                 <main>
                 <section class="escritos__n1">
@@ -128,8 +130,8 @@
                 
                 </main>
             </div>
-    </articicle>
-    <articicle id="escritos-responsive">  
+    </article>
+    <article id="escritos-responsive">  
             <section class="escritos-container-responsive">
                 <div class="escritos-text-responsive">
                     <p> 
@@ -205,11 +207,31 @@
                     <img src="Assets/image 2.png" alt="Barco" class="escritos-image-responsive">
                 </div>
             </section>
-            
-            
         
-    </articicle>
+    </article>
+
+    <div id="contacto" class="container d-flex flex-column justify-content-center align-items-center">
+        <h2 class="contacto-title">Contacto</h2>
+        <form id='form' class="my-4 p-3 d-flex flex-column align-content-center contacto-form">
+            <div class="mb-4">
+                <label for="email" class="form-label">Email</label>
+                <input class="form-control" id="input_email">
+            </div>
+            <div class="mb-4">
+                <label for="consulta" class="form-label">Consulta</label>
+                <textarea class="form-control" id="input_consulta"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.4600525829176!2d-58.421992975436574!3d-34.580888084908175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5836c2690ad%3A0x31d93e97eed48e77!2s%F0%9F%93%9A%20Feria%20de%20Libros%20Plaza%20Italia%20%F0%9F%93%96!5e0!3m2!1sen!2sar!4v1653610892020!5m2!1sen!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+    
     <article id="redes" class="redes">
+        
         <div class="redes__container">
             <h2>Seguime en mis redes</h2>
             <div class="redes-container-iconos">
@@ -222,9 +244,8 @@
             </div>
         </div>
     </article>
-     
-        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
-      <script src="script_detras.js"></script>
+    <script src="script_detras.js"></script>
 </body>
 </html>

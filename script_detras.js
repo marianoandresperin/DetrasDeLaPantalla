@@ -1,3 +1,6 @@
+const input_email = document.getElementById('input_email')
+const input_consulta = document.getElementById('input_consulta')
+const form = document.getElementById('form')
 const sobreMi = document.getElementById('sobre_mi')
 const escritos = document.getElementById('escritos')
 const redes = document.getElementById('redes')
@@ -6,6 +9,8 @@ const logo = document.getElementById('titulo')
 const link_escrito = document.getElementById('link_escritos')
 const link_mi = document.getElementById('link_mi')
 const link_redes = document.getElementById('link_redes')
+const link_contacto = document.getElementById('link_contacto')
+const contacto = document.getElementById('contacto')
 
 const scrollContainer = document.getElementById('escritos')
 
@@ -33,9 +38,6 @@ function changeColorLink(container,active){
     }
 }
 
-
-
-
 document.addEventListener("scroll",  () => {
     isInViewport(sobreMi)? changeColorLink(link_mi,true): changeColorLink(link_mi,false)
     isInViewport(redes) && !isInViewport(escritos) ? changeColorLink(link_redes,true): changeColorLink(link_redes,false)
@@ -61,9 +63,28 @@ link_mi.addEventListener("click",()=>{
     document.querySelector('main').scrollLeft = 0   
 })
 
+link_contacto.addEventListener("click",()=>{
+    scroller.toElement(contacto);
+    document.querySelector('main').scrollLeft = 4000   
+})
+
 link_redes.addEventListener("click",()=>{
     scroller.toElement(redes);
     document.querySelector('main').scrollLeft = 4000   
+})
+
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (input_email.value === '' || input_consulta.value === '') {
+        alert('No puede haber campos en blanco')
+    } else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(input_email.value)) {
+        alert('Debe ingresar un email válido')
+    } else if (input_consulta.value.length < 5) {
+        alert('La consulta debe contener más de 5 caracteres')
+    } else {
+        alert('Consulta enviada correctamente!')
+    }
 })
 
 
@@ -84,8 +105,6 @@ function setStickyContainersSize(){
         container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
     });
 }
-
-
 
 function wheelHandler(evt){
     
@@ -114,5 +133,3 @@ function wheelHandler(evt){
         containerInViewPort.querySelector('main').scrollLeft += evt.deltaY;
     }
 }
-
-

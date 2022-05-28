@@ -219,6 +219,20 @@ article{
 
  }
 
+ .contacto-title{
+    font-family: Cambria;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #242F40;
+  }
+
+  .contacto-form{
+      font-family: Cambria;
+      font-size: 1.5rem;
+      width: 60%;
+  }
+
 /*-----------Redes-------------------*/
 
  .redes{
@@ -252,8 +266,19 @@ article{
       flex-direction: row;
       justify-content: space-evenly;
   }
+  .mapa{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      overflow: hidden;
+  }
 
   @media all and (max-width: 992px) {
+    article{
+        /* min-width: 100vw; */
+        min-height: 0;
+    }
+    
     .landing{
         display: flex;
         overflow-y: hidden;
@@ -280,6 +305,24 @@ article{
         margin: auto;
         height: auto;
         transform: none;
+    }
+
+    .header__div1{
+        width: 35vw;
+    }
+
+    .header__div2{
+        width: 65vw;
+        padding-right: 1rem;
+    }
+
+    .header__div2__links{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+        font-size: 1.2rem;
     }
 
     .sobre_mi__texto p{
@@ -365,6 +408,25 @@ article{
         height: auto;
         transform: none;
     }
+
+    .header__div1{
+        width: 50vw;
+    }
+
+    .header__div1{
+        width: 50vw;
+    }
+
+    .header__div2__links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        margin: 0;
+        font-size: 1rem;
+        height: 100%;
+    }
+
     .sticky-container {
         display: none;
     }
@@ -405,6 +467,10 @@ article{
          width: 100%;
          height: auto;
      }
+
+     .contacto-form{
+        width: 95%;
+    }
 
       .redes{
         display: flex;
